@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F0F0F0" />
+
+
+
+        <LinearLayout
+            android:id="@+id/mCheckLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/mQStatusBar"
+                android:layout_width="match_parent"
+                android:elevation="2dp"
+                android:layout_height="@dimen/statusbar_view_height"
+                android:background="#FFFFFF" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mConfirmCheckToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:theme="@style/toolbar_theme"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:id="@+id/mTitleRL"
+                        android:layout_marginTop="16dp"
+                        android:background="#F0F0F0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextClock
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="#686868"
+                            android:id="@+id/mDateTV"
+                            android:format24Hour="yyyy年MM月dd日"
+                            android:format12Hour="yyyy年MM月dd日"
+                            android:textSize="12dp" />
+
+                        <TextClock
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="129dp"
+                            android:id="@+id/mTimeTV"
+                            android:textColor="#686868"
+                            android:format24Hour="HH时mm分"
+                            android:format12Hour="HH时mm分"
+
+                            android:textSize="12dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="36dp"
+                            android:id="@+id/mAddressTV"
+                            android:text="定位加载中..."
+                            android:textColor="#686868"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <com.baidu.mapapi.map.MapView
+                        android:layout_below="@+id/mTitleRL"
+                        android:id="@+id/mCheckMapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="17dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0F0F0">
+
+                        <RelativeLayout
+                            android:id="@+id/mCheckInRL"
+                            android:layout_width="118dp"
+                            android:layout_height="118dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="52dp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="118dp"
+                                android:layout_height="118dp"
+                                android:background="@drawable/round_view_red" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="29dp"
+                                android:text="确认进店"
+                                android:textStyle="bold"
+                                android:textColor="#B2FFFFFF"
+                                android:textSize="20dp" />
+
+                            <TextClock
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                android:format24Hour="HH:mm"
+                                android:format12Hour="HH:mm"
+
+                                android:textColor="#FFFFFF"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/mCheckOutRL"
+                            android:layout_width="118dp"
+                            android:visibility="gone"
+                            android:layout_height="118dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="52dp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="118dp"
+                                android:layout_height="118dp"
+                                android:background="@drawable/round_view_blue" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="29dp"
+                                android:text="确认出店"
+                                android:textColor="#50FFFFFF"
+                                android:textSize="20dp" />
+
+                            <TextClock
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                android:format24Hour="HH:mm"
+                                android:format12Hour="HH:mm"
+
+                                android:textColor="#FFFFFF"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

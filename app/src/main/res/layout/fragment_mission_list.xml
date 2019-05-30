@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFF"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/mMissionListStoreRL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/mDownIV"
+                    android:layout_width="8dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_down" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mShopTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mDownIV"
+                    android:text="附近无车商店"
+                    android:textColor="#5C5C5C"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/search_back_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/ic_back_5c5c5c" />
+
+            <Button
+                android:id="@+id/mBackBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:background="#FCFCFC"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mCalendarRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_relativelayout_10_white"
+                    android:elevation="4dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/mFollowTV">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mDateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="20"
+                            android:textColor="#747474"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/mFollowTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="61dp"
+                        android:textColor="#747474"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="21dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="查看任务日历"
+                            android:textColor="#747474"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/text"
+                            android:background="@drawable/ic_round_foward" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mCalenderBtn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="11dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FCFCFC">
+
+                <RelativeLayout
+                    android:id="@+id/mNotFoundRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/mNotFoundIV"
+                        android:layout_width="72dp"
+                        android:layout_height="69dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/img_not_found" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mNotFoundIV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="21dp"
+                        android:text="抱歉，暂无结果"
+                        android:textColor="#9B9B9B"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <ListView
+                    android:background="#FFF"
+                    android:id="@+id/mMissionListListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/listview_divider_12_12"
+                    android:dividerHeight="2px">
+
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

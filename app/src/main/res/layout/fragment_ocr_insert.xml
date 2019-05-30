@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <RelativeLayout
+            android:id="@+id/mFakeToolbarRL"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/mQStatusBar"
+            android:background="#FFF"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/mTitleRL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/mDownIV"
+                    android:layout_width="8dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_down" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mShopTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mDownIV"
+                    android:text="附近无车商店"
+                    android:textColor="#5C5C5C"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/search_back_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/ic_back_5c5c5c" />
+
+            <Button
+                android:id="@+id/mBackBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:layout_below="@+id/mFakeToolbarRL"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="车牌号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="61dp"/>
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mPlateNumberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入车牌号"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="车辆识别号/车架号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mIdET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入车辆识别号/车架号"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mDateRL"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="注册日期"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mDateeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="请选择注册日期"
+                    android:textColor="#B5B5B5"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="品牌型号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mBrandET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入品牌型号"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="持证人姓名"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"/>
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入姓名"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:text="持证人电话"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"/>
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mTelET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:inputType="phone"
+                    android:hint="请输入手机号码"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:text="发动机号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mEngineET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入发动机号"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mEndRL"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+
+                    android:text="保单止期"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="75dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mEndET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="请选择保单止期"
+                    android:textColor="#B5B5B5"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+
+                    android:text="承保主体"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mInsuranceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入承保主体"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginTop="163dp"-->
+            <!--android:text="品牌型号"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.android.lixiang.base.utils.view.EditTextWithDeleteButton-->
+            <!--android:id="@+id/mBrandET"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="159dp"-->
+            <!--android:layout_marginTop="163dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:background="@null"-->
+            <!--android:ellipsize="end"-->
+            <!--android:hint="请输入品牌型号"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textColorHint="#B5B5B5"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="52dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="99dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="146dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="193dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="240dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/mDateRL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_marginTop="99dp"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_marginTop="196dp"-->
+            <!--android:background="#FFF">-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:text="持证人姓名"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.android.lixiang.base.utils.view.EditTextWithDeleteButton-->
+            <!--android:id="@+id/mNameET"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="159dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:background="@null"-->
+            <!--android:ellipsize="end"-->
+            <!--android:hint="请输入姓名"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textColorHint="#B5B5B5"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="14dp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="240dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="53dp"-->
+            <!--android:layout_marginTop="250dp"-->
+            <!--android:background="#FFF">-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginTop="17dp"-->
+            <!--android:text="持证人电话"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textSize="14dp" />-->
+
+            <!--<com.android.lixiang.base.utils.view.EditTextWithDeleteButton-->
+            <!--android:id="@+id/mTelET"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="159dp"-->
+            <!--android:layout_marginTop="17dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:background="@null"-->
+            <!--android:ellipsize="end"-->
+            <!--android:hint="请输入手机号码"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#686868"-->
+            <!--android:textColorHint="#B5B5B5"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="14dp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2px"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="263dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:background="#CCC" />-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mConfirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F73E00"
+            android:clickable="true"
+            android:focusable="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确认"
+                android:textColor="#FFF"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mInfomationReportToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme"/>
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="#FFF"
+            android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:id="@+id/mCarStoreInfoReportRL"-->
+                    <!--android:minHeight="100dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/mCarStoreReportTitleIV"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:background="@drawable/round_relativelayout_5_ff7445">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:textColor="#FFF"-->
+                            <!--android:text="车"-->
+                            <!--android:id="@+id/mTextInImageTV1"-->
+                            <!--android:textSize="18dp" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:layout_toRightOf="@+id/mCarStoreReportTitleIV">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/mCarStoreReportTitleTV"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="#5C5C5C"-->
+                            <!--android:text="车商店信息上报"-->
+                            <!--android:textSize="14dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/mCarStoreReportDetailTV"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentBottom="true"-->
+                            <!--android:textColor="#747474"-->
+                            <!--android:text="其他主体销售政策、店内活动信息上报"-->
+                            <!--android:textSize="12dp" />-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="2px"-->
+                    <!--android:background="#CCCCCC"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:layout_marginRight="12dp"/>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:id="@+id/mCardSearchRL"-->
+                    <!--android:minHeight="100dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/mMissionTitleIV"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:background="@drawable/round_relativelayout_5_62b5ff">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:textColor="#FFF"-->
+                            <!--android:text="行"-->
+                            <!--android:id="@+id/mTextInImageTV"-->
+                            <!--android:textSize="18dp" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:layout_toRightOf="@+id/mMissionTitleIV">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/mMissionTitleTV"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="#5C5C5C"-->
+                            <!--android:text="行驶证扫描"-->
+                            <!--android:textSize="14dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/mMissionDetailTV"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentBottom="true"-->
+                            <!--android:textColor="#747474"-->
+                            <!--android:text="行驶证信息上报"-->
+                            <!--android:textSize="12dp" />-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="2px"
+                    android:id="@+id/mInfomationReportLV"
+                    android:divider="@drawable/listview_divider_12_12"/>
+            </LinearLayout>
+
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="103dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="103dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="24dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="#686868"
+            android:textSize="18dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78dp"
+            android:textColor="#686868"
+            android:textSize="12dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mStateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mDateTV"
+            android:textColor="#6295FF"
+            android:textSize="12dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mLateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="211dp"
+            android:background="@drawable/textview_border_5"
+            android:textColor="#F63E00"
+            android:textSize="12dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mFailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="211dp"
+            android:background="@drawable/textview_border_6"
+            android:textColor="#9B9B9B"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mPoiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="14dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#9B9B9B"
+        android:textSize="12dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:text="更新状态"
+        android:textColor="#3897FF"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/mBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:background="#00000000" />
+</RelativeLayout>

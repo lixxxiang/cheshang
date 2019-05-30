@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_below="@+id/mQStatusBar"
+            android:id="@+id/mChangePhoneNumberToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme" />
+
+        <!--<com.android.lixiang.base.utils.view.BounceScrollView-->
+            <!--android:layout_below="@+id/mChangePhoneNumberToolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#EAEAEA"-->
+            <!--android:fillViewport="true"-->
+            <!--android:scrollbars="none">-->
+
+            <RelativeLayout
+                android:layout_below="@+id/mChangePhoneNumberToolbar"
+                android:background="#EAEAEA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/round_relativelayout_10_white">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/mTelET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        android:hint="请输入新手机号码"
+                        android:inputType="phone"
+                        android:maxLength="80"
+                        android:minLines="1"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="#5F5F5F"
+                        android:textColorHint="#B5B5B5"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/round_relativelayout_10_white"
+                    android:elevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_relativelayout_10_gray_up">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="用户信息"
+                            android:textColor="#FFF"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="姓名"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:textColor="#5C5C5C"
+                                android:textSize="14dp"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:layout_marginRight="24dp"
+                                android:id="@+id/mNameTV"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="92dp"
+                                android:textColor="#9B9B9B"
+                                android:textSize="14dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="23dp"
+                                android:layout_marginRight="23dp"
+                                android:background="#E9E9E9" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HR号码"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:textColor="#5C5C5C"
+                                android:textSize="14dp"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="92dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:id="@+id/mHRTV"
+                                android:layout_marginRight="24dp"
+                                android:textColor="#9B9B9B"
+                                android:textSize="14dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="23dp"
+                                android:layout_marginRight="23dp"
+                                android:background="#E9E9E9" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="电话号码"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:textColor="#5C5C5C"
+                                android:textSize="14dp"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/mTelTV"
+                                android:ellipsize="end"
+                                android:layout_marginRight="24dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="92dp"
+                                android:textColor="#9B9B9B"
+                                android:textSize="14dp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="23dp"
+                                android:layout_marginRight="23dp"
+                                android:background="#E9E9E9" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="手机型号（IMEI）"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:textColor="#5C5C5C"
+                                android:textSize="14dp"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:id="@+id/mIMEITV"
+                                android:ellipsize="end"
+                                android:layout_marginRight="24dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="141dp"
+                                android:textColor="#9B9B9B"
+                                android:textSize="14dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        <!--</com.android.lixiang.base.utils.view.BounceScrollView>-->
+        <RelativeLayout
+            android:id="@+id/mChangePhoneNumberCommitBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F73E00">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交申请"
+                android:id="@+id/mCommitTV"
+                android:textSize="14dp"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

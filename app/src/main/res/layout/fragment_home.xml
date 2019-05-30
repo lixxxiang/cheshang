@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <!--<com.emall.base.widgets.NoScrollViewPager-->
+        <!--android:id="@+id/mViewPager"-->
+        <!--android:background="#FFFF00"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/mBottomNavigationViewLayout"/>-->
+        <FrameLayout
+            android:id="@+id/mFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mBottomNavigationViewLayout"/>
+
+        <RelativeLayout
+            android:id="@+id/mBottomNavigationViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true">
+            <View
+                android:id="@+id/mShadow"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#BFBFBF"/>
+
+            <!--<View-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/mShadow2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="#F0F0F0"-->
+                <!--android:layout_above="@+id/mBottomNavigationView" />-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<android.support.design.widget.BottomNavigationView-->
+                        <!--android:id="@+id/navigation"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="0dp"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginEnd="0dp"-->
+                        <!--android:background="?android:attr/windowBackground" />-->
+                <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+            <include android:id="@+id/mBottomNavigationView"
+                android:layout_below="@+id/mShadow"
+                layout="@layout/bottom_nav_view"
+                android:layout_height="match_parent"
+                android:background="?android:attr/windowBackground"
+                android:layout_width="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

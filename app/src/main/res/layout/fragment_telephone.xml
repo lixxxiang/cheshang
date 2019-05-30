@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+
+        <!--<com.android.lixiang.base.utils.view.BounceScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true"-->
+        <!--android:scrollbars="none">-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="31dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_app" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="车商管理平台"
+                    android:textColor="#4A4A4A"
+                    android:textSize="14dp" />
+
+
+                <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                    android:id="@+id/mTelET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="148dp"
+                    android:layout_marginRight="19dp"
+                    android:background="@null"
+                    android:ems="11"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="#5F5F5F"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/underLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#F4F4F4" />
+
+                <RelativeLayout
+                    android:id="@+id/mTelRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="202dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_relativelayout_4_gray"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/mTelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="登录"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mCannotTelBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mTelRL"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:padding="20dp"
+                    android:text="无法登陆"
+                    android:textColor="#f73E00" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--</com.android.lixiang.base.utils.view.BounceScrollView>-->
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:text="由吉林人保信息技术部提供技术支持"
+            android:textColor="#B5B5B5"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mTelphoneToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/mQStatusBar"
+            android:background="#FFFFFF"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

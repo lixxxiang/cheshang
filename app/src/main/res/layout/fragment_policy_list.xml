@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+
+    <RelativeLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mPolicyToolbar"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mQStatusBar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme" />
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mPolicyToolbar"
+            android:background="#F0F0F0"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp" />
+
+                <com.android.lixiang.base.utils.view.CommentListView
+                    android:id="@+id/mPolicyLV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        <RelativeLayout
+            android:id="@+id/mNotFoundRL"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mPolicyToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="72dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mNotFoundIV"
+                android:background="@drawable/img_not_found"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抱歉，暂无结果"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mNotFoundIV"
+                android:layout_marginTop="21dp"
+                android:textColor="#9B9B9B"
+                android:textSize="14dp"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#F73E00"
+            android:indeterminateTintMode="src_atop" />
+    </RelativeLayout>
+
+</RelativeLayout>

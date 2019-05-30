@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:2:5-39
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:1-6:12
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:4:5-84
+	android:name
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:4:22-81
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml:5:22-72
+uses-sdk
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		ADDED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixiang/Downloads/车商/cheshang3/base/src/main/AndroidManifest.xml

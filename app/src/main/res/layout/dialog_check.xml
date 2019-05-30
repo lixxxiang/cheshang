@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/mDoneRL"
+        android:layout_width="276dp"
+        android:layout_height="394dp"
+        android:background="@drawable/round_relativelayout_10_white"
+        android:layout_centerInParent="true">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_check"
+            android:layout_marginTop="81dp"
+            android:layout_centerHorizontal="true" />
+        <TextClock
+            android:format24Hour="HH:mm"
+            android:format12Hour="HH:mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#62B5FF"
+            android:textSize="48dp"
+            android:id="@+id/mCheckTimeTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#62B5FF"
+            android:textSize="20dp"
+            android:id="@+id/mCheckDetailTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="236dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#C1C1C1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"/>
+        <RelativeLayout
+            android:id="@+id/mCheckDoneRL"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好的"
+                android:layout_centerInParent="true"
+                android:textColor="#F73E00"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

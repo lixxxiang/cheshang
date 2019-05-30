@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="2dp"
+            android:layout_weight="1">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mWorkToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="我的工作"
+                        android:textColor="#686868"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/mStoreRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/mDownIV"
+                            android:layout_width="8dp"
+                            android:layout_height="5dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_down" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mCurrentShopTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/mDownIV"
+                            android:text="附近无车商店"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@drawable/img_banner"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/img_work_content" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_centerVertical="true"
+                    android:text="工作内容"
+                    android:textColor="#686868"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/mMissionIV"
+                    android:background="@drawable/img_today_mission" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:text="今日任务"
+                    android:layout_alignTop="@+id/mMissionIV"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:id="@+id/mMissionTV"
+                    android:layout_alignBottom="@+id/mMissionIV"
+                    android:text="查看任务详情"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mMissionTodayBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mReportIV"
+                    android:background="@drawable/img_info_report" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mReportIV"
+                    android:text="店情上报"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="79dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:layout_alignBottom="@+id/mReportIV"
+                    android:layout_toRightOf="@+id/mCenter"
+                    android:text="政策实时上报"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mInfoReportBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#F6F6F6">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_manage" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_centerVertical="true"
+                    android:text="管理"
+                    android:textColor="#686868"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/mCheckIV"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_clock_in" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:layout_alignTop="@+id/mCheckIV"
+                    android:text="打卡"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:layout_alignBottom="@+id/mCheckIV"
+                    android:text="进出店请打卡"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mClockInBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/mRecordIV"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:background="@drawable/img_info_report" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78dp"
+                    android:layout_alignTop="@+id/mRecordIV"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:text="工作记录"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78dp"
+                    android:layout_alignBottom="@+id/mRecordIV"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:text="工作备忘提醒"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mWorkRecordBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mPolicyIV"
+                    android:background="@drawable/img_policy" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:text="政策查看"
+                    android:layout_alignTop="@+id/mPolicyIV"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_alignBottom="@+id/mPolicyIV"
+                    android:text="随时查看人保政策"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mPolicyBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/mMessageIV"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:background="@drawable/img_message" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78dp"
+                    android:layout_alignTop="@+id/mMessageIV"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:text="消息"
+                    android:textColor="#5C5C5C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78dp"
+                    android:id="@+id/mMessageTV"
+                    android:layout_alignBottom="@+id/mMessageIV"
+                    android:layout_toRightOf="@+id/mCenter2"
+                    android:text="您有 3条 未读"
+                    android:textColor="#747474"
+                    android:textSize="12dp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/mMsgBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

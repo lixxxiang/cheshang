@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center">
+
+    <com.android.lixiang.base.utils.view.MyScrollView
+        android:layout_width="match_parent"
+        android:overScrollMode ="never"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mXuanZeRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_textview_red_small"
+                        android:text="必填"
+                        android:visibility="gone"
+                        android:id="@+id/mRequiredTV"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_view_blue_small"
+                        android:text="选填"
+                        android:visibility="gone"
+                        android:id="@+id/mNotRequiredTV"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56dp"
+                        android:id="@+id/mSingleTV"
+                        android:visibility="gone"
+                        android:background="@drawable/round_textview_red_small"
+                        android:text="单选"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56dp"
+                        android:id="@+id/mMultiTV"
+                        android:visibility="gone"
+
+                        android:background="@drawable/round_view_blue_small"
+                        android:text="多选"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mQuestionTV"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16dp"
+                    android:textColor="#5C5C5C"
+                    android:layout_marginRight="16dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/mWenZiRL"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_textview_red_small"
+                        android:text="必填"
+                        android:visibility="gone"
+                        android:id="@+id/mRequiredTV2"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_view_blue_small"
+                        android:text="选填"
+                        android:visibility="gone"
+                        android:id="@+id/mNotRequiredTV2"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mQuestionTV2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16dp"
+                    android:textColor="#5C5C5C"
+                    android:layout_marginRight="16dp" />
+
+                <RelativeLayout
+                    android:layout_below="@+id/mQuestionTV2"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginBottom="400dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="28dp">
+                    <View
+                        android:id="@+id/mUnderLine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="6dp"
+                        android:background="#5C5C5C"/>
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/mReportET2"-->
+                        <!--android:background="#00000000"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="top"-->
+                        <!--android:hint="请输入答案"-->
+                        <!--android:inputType="textMultiLine"-->
+                        <!--android:maxLength="800"-->
+                        <!--android:minLines="1"-->
+                        <!--android:layout_marginRight="6dp"-->
+                        <!--android:textColor="#4A4A4A"-->
+                        <!--android:textSize="16dp" />-->
+
+                    <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                        android:id="@+id/mWenZiET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_marginRight="6dp"
+                        android:hint="请输入答案"
+                        android:singleLine="true"
+                        android:textColorHint="#9B9B9B"
+                        android:inputType="textMultiLine"
+                        android:textColor="#4A4A4A"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/mShuZiRL"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_textview_red_small"
+                        android:text="必填"
+                        android:visibility="gone"
+                        android:id="@+id/mRequiredTV3"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/round_view_blue_small"
+                        android:text="选填"
+                        android:visibility="gone"
+                        android:id="@+id/mNotRequiredTV3"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mQuestionTV3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16dp"
+                    android:textColor="#5C5C5C"
+                    android:layout_marginRight="16dp" />
+
+                <RelativeLayout
+                    android:layout_below="@+id/mQuestionTV3"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginBottom="400dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="28dp">
+                    <View
+                        android:id="@+id/mUnderLine3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/mDanWeiTV"
+                        android:layout_marginRight="6dp"
+                        android:background="#5C5C5C"/>
+
+                    <com.android.lixiang.base.utils.view.EditTextWithDeleteButton
+                        android:id="@+id/mShuZiET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:layout_marginRight="6dp"
+                        android:hint="请输入答案"
+                        android:singleLine="true"
+                        android:layout_toLeftOf="@+id/mDanWeiTV"
+                        android:textColorHint="#9B9B9B"
+                        android:inputType="number"
+                        android:textColor="#4A4A4A"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="16dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:id="@+id/mDanWeiTV"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#9B9B9B"
+                        android:textSize="14dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </com.android.lixiang.base.utils.view.MyScrollView>
+
+</RelativeLayout>

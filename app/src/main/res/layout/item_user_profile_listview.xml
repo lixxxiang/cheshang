@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5C5C5C"
+        android:textSize="14dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5C5C5C"
+        android:textSize="14dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="97dp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/mCarStoreIV"
+        android:layout_width="8dp"
+        android:layout_height="14dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/ic_foward"/>
+</RelativeLayout>

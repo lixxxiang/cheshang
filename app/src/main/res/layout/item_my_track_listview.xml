@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="103dp"
+    android:minHeight="103dp">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mMyTrackTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:09"
+        android:textSize="18dp"
+        android:textColor="#686868"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="24dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mMyTrackSubTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018年08月31日 进店"
+        android:textSize="12dp"
+        android:textColor="#686868"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="30dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mMyTrackDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试测试"
+        android:textSize="12dp"
+        android:textColor="#9B9B9B"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="62dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mMyTrackTagTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外勤"
+        android:textSize="12dp"
+        android:textColor="#F63E00"
+        android:background="@drawable/textview_border_5"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

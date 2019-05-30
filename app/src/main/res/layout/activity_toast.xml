@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tttt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mToastRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#72000000"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="394dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginRight="53dp"
+                    android:background="@drawable/round_relativelayout_10_white">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="81dp"
+                        android:background="@drawable/ic_check" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="150dp"
+                        android:text="1235"
+                        android:textColor="#62B5FF"
+                        android:textSize="48dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="236dp"
+                        android:text="进店打卡成功"
+                        android:textColor="#62B5FF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="55dp"
+                        android:background="#C1C1C1" />
+
+                    <RelativeLayout
+                        android:id="@+id/mDoneRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_alignParentBottom="true"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="好的"
+                            android:textColor="#F73E00"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

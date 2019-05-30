@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mDetailToolbar"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mQStatusBar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:layout_below="@+id/mDetailToolbar"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="车牌号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="61dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mPlateNumberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="车辆识别号/车架号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mIdET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mDateRL"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="注册日期"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mDateeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="品牌型号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mBrandET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:text="持证人姓名"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:text="持证人电话"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mTelET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:text="发动机号"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mEngineET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mEndRL"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:text="保单止期"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#F73E00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="75dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mEndET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="159dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+
+                    android:text="承保主体"
+                    android:textColor="#686868"
+                    android:textSize="14dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mInsuranceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="159dp"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="14dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textColorHint="#B5B5B5"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

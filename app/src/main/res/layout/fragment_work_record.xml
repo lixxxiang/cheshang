@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/mWorkRecordToolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="74dp"-->
+        <!--android:layout_below="@+id/mQStatusBar"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:elevation="2dp"-->
+        <!--android:minHeight="74dp"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:contentInsetStartWithNavigation="0dp"-->
+        <!--app:theme="@style/toolbar_theme">-->
+
+        <!--&lt;!&ndash;<android.support.v7.widget.AppCompatTextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/mEditTV"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="end"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:padding="13dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="编辑"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#F73E00"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="18dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="normal" />&ndash;&gt;-->
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/mEditBtn"-->
+        <!--android:layout_width="70dp"-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:text="编辑"-->
+        <!--android:textColor="#F73E00"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textStyle="normal" />-->
+        <!--</android.support.v7.widget.Toolbar>-->
+        <RelativeLayout
+            android:layout_below="@+id/mQStatusBar"
+            android:id="@+id/mWorkRecordToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFF"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/mMissionListStoreRL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/search_back_iv"
+                android:layout_toLeftOf="@+id/mEditBtn"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mDownIV"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/mTitleRL">
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="工作日志"
+                            android:gravity="center"
+                            android:textColor="#5C5C5C"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:id="@+id/mTitleTV"
+                            android:textSize="20dp"
+                            />
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="15dp"
+                            android:layout_height="17dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ic_alert"
+                            android:layout_toRightOf="@+id/mTitleTV"
+                            />
+                    </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mDownIV"
+                    android:textColor="#5C5C5C"
+                    android:id="@+id/mSubTitleTV"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="14dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/mTitleRL"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/search_back_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/ic_back_5c5c5c" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/mEditBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="编辑"
+                android:textColor="#F73E00"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                />
+        </RelativeLayout>
+
+        <com.android.lixiang.base.utils.view.BounceScrollView
+            android:id="@+id/mWorkRecordSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode ="never"
+            android:layout_below="@+id/mWorkRecordToolbar"
+            android:background="#EAEAEA"
+
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <!--<ListView-->
+            <!--android:id="@+id/mWorkRecordLV"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:divider="@drawable/listview_divider_18_18"-->
+            <!--android:scrollbars="none"-->
+            <!--android:dividerHeight="2px"-->
+            <!--android:layout_height="match_parent" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EAEAEA"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mDateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2018/8/21 周六"
+                    android:textColor="#8D8D8D"
+                    android:textSize="14dp" />
+
+                <com.android.lixiang.base.utils.view.CommentListView
+                    android:id="@+id/mWorkRecordLV"
+                    android:layout_width="match_parent"
+                    android:overScrollMode ="never"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#CCFFFFFF"
+                    android:divider="@drawable/listview_divider_18_18"
+                    android:dividerHeight="2px"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        <RelativeLayout
+            android:id="@+id/mDeleteRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F73E00"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="删除"
+                android:textColor="#FFF"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

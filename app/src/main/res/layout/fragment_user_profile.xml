@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mTrimLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/mQStatusBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusbar_view_height"
+                android:background="#33FFFFFF" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mUserProfileToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#33FFFFFF"
+                android:layout_below="@+id/mQStatusBar"
+                android:minHeight="74dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:theme="@style/toolbar_theme">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mUserProfileDoneTV"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="完成"
+                    android:textStyle="normal"
+                    android:textColor="#F73E00"
+                    android:layout_marginRight="13dp"
+                    android:textSize="18dp"/>
+            </android.support.v7.widget.Toolbar>
+
+            <com.android.lixiang.base.utils.view.BounceScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:id="@+id/bsv"
+                android:visibility="gone"
+                android:layout_below="@+id/mUserProfileToolbar"
+                android:background="#F0F0F0">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/mAvatarRL"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF">
+                        <android.support.v7.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#5C5C5C"
+                            android:text="头像"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp" />
+
+                        <com.android.lixiang.base.utils.view.RoundImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/mAvatarIV"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="47dp"
+                            android:background="@drawable/ic_avatar"
+                            />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="8dp"
+                            android:layout_height="14dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="21dp"
+                            android:background="@drawable/ic_foward"
+                            />
+                    </RelativeLayout>
+                    <ListView
+                        android:id="@+id/mUserProfileLV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:layout_marginTop="11dp"
+                        android:divider="@drawable/listview_divider_13_0"
+                        android:dividerHeight="2px"/>
+                </LinearLayout>
+            </com.android.lixiang.base.utils.view.BounceScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

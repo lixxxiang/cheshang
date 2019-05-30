@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mRootRL"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:minHeight="55dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/mTitleIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp" />
+
+    <RelativeLayout
+        android:id="@+id/mHasDetailRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mContentTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#686868"
+            android:textSize="18dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTimeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#686868"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/mContentTV"
+            android:textSize="12dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mContentTV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#686868"
+        android:textSize="18dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#9B9B9B"
+        android:text="已过期"
+        android:id="@+id/mExpireTV"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_me_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F0F0F0" />
+
+    <com.android.lixiang.base.utils.view.BounceScrollView
+        android:id="@+id/me_bsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/mMeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="86dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/me_avatar_iv"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_avatar" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <Button
+                            android:id="@+id/mLoginRL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mUserNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginLeft="22dp"
+                            android:lines="1"
+                            android:singleLine="true"
+                            android:text="@string/sign_in"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mLoginSubTitleTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginLeft="22dp"
+                            android:text="PICC"
+                            android:textColor="#F1EB94"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mLoginSubTitleTV2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/mLoginSubTitleTV"
+                            android:text="车商管理平台"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="个人资料"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="8dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ic_foward" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="14dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="@drawable/listview_divider_13_0"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="允许通知"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="8dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ic_foward" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="14dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="@drawable/listview_divider_13_0"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="允许访问网络"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="8dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/ic_foward" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="14dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="@drawable/listview_divider_13_0"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:minHeight="50dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="清理缓存"
+                            android:textColor="#5C5C5C"
+                            android:textSize="14dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="14dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/mSettingsListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:divider="@drawable/listview_divider_13_0"
+                    android:dividerHeight="2px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F0F0">
+
+                <RelativeLayout
+                    android:id="@+id/mLogOutRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="88dp"
+                    android:background="@drawable/round_relativelayout_100_red"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="退出登录"
+                        android:textColor="#FFF"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.android.lixiang.base.utils.view.BounceScrollView>
+
+</RelativeLayout>

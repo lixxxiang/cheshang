@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/CL"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+
+    <LinearLayout
+        android:id="@+id/mCheckLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mQStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mMissionTodayToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:minHeight="74dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/toolbar_theme" >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="完成"
+                android:id="@+id/mDoneBtn"
+                android:padding="13dp"
+                android:textStyle="normal"
+                android:textColor="#9B9B9B"
+                android:textSize="18dp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<ListView-->
+                <!--android:id="@+id/mLeftLV"-->
+                <!--android:layout_width="71dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scrollbars="none"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.android.lixiang.base.utils.view.ScrollViewInListView-->
+                    <!--android:id="@+id/mRightLV"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scrollbars="none" />-->
+            <!--</LinearLayout>-->
+
+
+
+
+            <fr.castorflex.android.verticalviewpager.VerticalViewPager
+                android:id="@+id/verticalViewPager"
+                android:layout_toRightOf="@+id/mLeftLV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--<com.android.lixiang.cheshang.util.verticaltablayout.VerticalTabLayout-->
+                <!--android:id="@+id/tablayout"-->
+                <!--android:layout_width="73dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#EAEAEA"-->
+                <!--android:visibility="visible"-->
+                <!--app:indicator_color="#FFFFFF"-->
+                <!--app:indicator_gravity="fill"-->
+                <!--app:indicator_width="6dp"-->
+                <!--app:tab_height="44dp"-->
+                <!--app:tab_mode="scrollable" />-->
+            <ListView
+                android:overScrollMode ="never"
+                android:id="@+id/mLeftLV"
+                android:layout_width="71dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
